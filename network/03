@@ -1,0 +1,1 @@
+networksetup -listallhardwareports | awk '/Wi-Fi/{print; getline; print; getline; print}'| awk -F": " '/Ethernet/{print $2}'

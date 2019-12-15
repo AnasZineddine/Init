@@ -1,0 +1,1 @@
+kill -9 `ps -ef | grep ssh | awk '{print $2}' | awk  '{ printf( "%s ", $1 ); } END { printf( "\n" ); }'`
